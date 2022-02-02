@@ -1,0 +1,25 @@
+.footer-admin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--light-orange);
+    border-top: var(--blue) solid 5px;
+}
+
+.logo-holydrinks-footer-admin {
+    width: 5rem;
+}
+
+.button-footer-admin {
+    background-color: var(--yellow);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+
+  .button-footer-admin-choice {
+    display: flex;
+    justify-content: space-between;
+  }
