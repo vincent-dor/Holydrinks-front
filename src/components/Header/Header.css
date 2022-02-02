@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-orange);
+    border-bottom: var(--blue) solid 5px;
+}
+
+.logo-holydrinks {
+    width: 9rem;
+}

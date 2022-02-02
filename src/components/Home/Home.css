@@ -1,0 +1,49 @@
+.welcome-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/Cocktail.jpg");
+  background-position: center;
+  width: 100%;
+  height: 15rem;
+}
+
+.word-home {
+  color: var(--blue);
+  -webkit-text-stroke: 1px white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.description-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.history-home {
+  color: var(--blue);
+}
+
+.categories-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-home {
+  background-color: var(--yellow);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .welcome-home {
+    background-image: url("../../assets/Cocktail-Desktop.jpg");
+    height: 20rem;
+  }
+}
