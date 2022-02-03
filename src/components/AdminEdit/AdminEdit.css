@@ -1,0 +1,35 @@
+.admin-edit-cocktail-form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  
+  .label-edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--blue);
+    margin-bottom: 1rem;
+  }
+  
+  .edit-label {
+      margin-top: 2rem;
+  }
+  
+  .edit-button {
+    background-color: var(--yellow);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 10px;
+  }
+  
+  .admin-edit-button-container {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    justify-content: center;
+  }
