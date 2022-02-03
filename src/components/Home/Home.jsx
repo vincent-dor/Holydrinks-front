@@ -15,8 +15,20 @@ const Home = () => {
           <p className="word-home">BIENVENUE</p>
         </div>
         <div className="description-home">
+          <h4 className="history-home">Bienvenue sur le site de HolyDrinks!</h4>
           <p className="history-home">
-            BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA BLA
+            Ici vous trouverez divers cocktails à voir et à déguster ainsi que
+            la liste des ingrédients à avoir si vous avez envie de vous faire
+            plaisir! N'hésitez surtout pas à regarder en long et en large ce
+            site!
+          </p>
+          <p className="history-home">
+            Des grands classiques comme le punch ou la sangria aux cocktails
+            plus exotiques comme la caïpirinha ou le mojito, devenez expert en
+            cocktails colorés et savoureux, pour un apéritif festif!
+          </p>
+          <p className="history-home">
+            Faites vous plaisir et bonne journée à vous!
           </p>
         </div>
         <Link to="/categories">

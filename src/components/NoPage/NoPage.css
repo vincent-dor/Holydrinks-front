@@ -1,0 +1,23 @@
+.nopage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  margin-top: 4rem;
+}
+
+.nopage-image {
+  width: 100%;
+  height: auto;
+}
+
+.nopage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nopage-oups {
+  margin-top: 2rem;
+  margin-bottom: 18rem;
+}
