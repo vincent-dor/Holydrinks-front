@@ -14,6 +14,11 @@ const Admin = () => (
           <p className="admin-title">Editer/Créer les cocktails</p>
         </div>
       </Link>
+      <Link to="/admin/archive" className="admin-cocktails">
+        <div className="admin-category">
+          <p className="admin-title">Archiver les cocktails</p>
+        </div>
+      </Link>
     </main>
     <FooterAdmin />
   </>

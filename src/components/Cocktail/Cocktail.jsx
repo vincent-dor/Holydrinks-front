@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import axios from 'axios';
+import ArrowUp from '../ArrowUp/ArrowUp';
 
 import './Cocktail.css';
 
@@ -36,6 +37,7 @@ const CocktailList = ({ cocktail }) => {
           <p>Posté par: {cocktail.userFirstName}</p>
         </div>
       </div>
+      <ArrowUp />
     </div>
   );
 };

@@ -9,7 +9,7 @@ import FooterAdmin from '../FooterAdmin/FooterAdmin';
 
 import './AdminCreate.css';
 
-const AdminAddProduct = () => {
+const AdminCreate = () => {
   const { user } = useApp();
   const { credential } = user;
 
@@ -108,85 +108,89 @@ const AdminAddProduct = () => {
       <Header />
       <p className="error">{error}</p>
       <form onSubmit={formik.handleSubmit} className="admin-add-cocktail-form">
-        <label htmlFor="name">
-          Nom du cocktail :
-          {formik.errors.name ? (
-            <div className="error">{formik.errors.name}</div>
-          ) : null}
-          <input
-            id="name"
-            name="name"
-            type="text"
-            onChange={formik.handleChange}
-            value={formik.values.name}
-          />
-        </label>
-        <label htmlFor="user">
-          Utilisateur :
-          {formik.errors.userId ? (
-            <div className="error">{formik.errors.userId}</div>
-          ) : null}
-          <select
-            id="userId"
-            name="userId"
-            onChange={formik.handleChange}
-            value={formik.values.userId}
-          >
-            <option>Choix</option>
-            {users.map((user) => (
-              <option key={user.id} value={user.id}>
-                {user.firstname}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label htmlFor="category">
-          Catégories :
-          {formik.errors.categoryId ? (
-            <div className="error">{formik.errors.categoryId}</div>
-          ) : null}
-          <select
-            id="categoryId"
-            name="categoryId"
-            onChange={formik.handleChange}
-            value={formik.values.categoryId}
-          >
-            <option>Catégories</option>
-            {categories.map((categorie) => (
-              <option key={categorie.id} value={categorie.id}>
-                {categorie.name}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label htmlFor="image">
-          Image :
-          {formik.errors.image ? (
-            <div className="error">{formik.errors.image}</div>
-          ) : null}
-          <input
-            id="image"
-            name="image"
-            type="text"
-            onChange={formik.handleChange}
-            value={formik.values.image}
-          />
-        </label>
-        <label htmlFor="description">
-          Description :
-          {formik.errors.description ? (
-            <div className="error">{formik.errors.description}</div>
-          ) : null}
-          <textarea
-            id="description"
-            name="description"
-            type="text"
-            onChange={formik.handleChange}
-            value={formik.values.description}
-          />
-        </label>
-        <div className="admin-product-button-container">
-          <button type="submit">Submit</button>
+        <div className="create-label">
+          <label htmlFor="name" className="label-create">
+            Nom du cocktail :
+            {formik.errors.name ? (
+              <div className="error">{formik.errors.name}</div>
+            ) : null}
+            <input
+              id="name"
+              name="name"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.name}
+            />
+          </label>
+          <label htmlFor="user" className="label-create">
+            Utilisateur :
+            {formik.errors.userId ? (
+              <div className="error">{formik.errors.userId}</div>
+            ) : null}
+            <select
+              id="userId"
+              name="userId"
+              onChange={formik.handleChange}
+              value={formik.values.userId}
+            >
+              <option>Choix</option>
+              {users.map((user) => (
+                <option key={user.id} value={user.id}>
+                  {user.firstname}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label htmlFor="category" className="label-create">
+            Catégories :
+            {formik.errors.categoryId ? (
+              <div className="error">{formik.errors.categoryId}</div>
+            ) : null}
+            <select
+              id="categoryId"
+              name="categoryId"
+              onChange={formik.handleChange}
+              value={formik.values.categoryId}
+            >
+              <option>Catégories</option>
+              {categories.map((categorie) => (
+                <option key={categorie.id} value={categorie.id}>
+                  {categorie.name}
+                </option>
+              ))}
+            </select>
+          </label>
+          <label htmlFor="image" className="label-create">
+            Image :
+            {formik.errors.image ? (
+              <div className="error">{formik.errors.image}</div>
+            ) : null}
+            <input
+              id="image"
+              name="image"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.image}
+            />
+          </label>
+          <label htmlFor="description" className="label-create">
+            Description :
+            {formik.errors.description ? (
+              <div className="error">{formik.errors.description}</div>
+            ) : null}
+            <textarea
+              id="description"
+              name="description"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.description}
+            />
+          </label>
+        </div>
+        <div className="admin-create-button-container">
+          <button type="submit" className="create-button">
+            Submit
+          </button>
         </div>
       </form>
       <FooterAdmin />
@@ -194,4 +198,4 @@ const AdminAddProduct = () => {
   );
 };
 
-export default AdminAddProduct;
+export default AdminCreate;
