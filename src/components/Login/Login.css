@@ -1,0 +1,58 @@
+.login-logo {
+  width: 100%;
+  height: 30rem;
+  margin: auto;
+  background-color: var(--light-orange);
+  display: flex;
+  justify-content: center;
+}
+
+.login-container {
+  background-color: var(--light-orange);
+  padding-bottom: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-title {
+  color: var(--blue);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.login-email {
+  width: 15rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.login-password {
+  width: 15rem;
+  height: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.login-submit {
+  color: var(--blue);
+  font-weight: bold;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--yellow);
+  border: 1px solid var(--blue);
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}

@@ -10,13 +10,8 @@ const Admin = () => (
     <Header />
     <main className="admin-container">
       <Link to="/admin/cocktails" className="admin-cocktails">
-        <div className="logo-basket1-cercle">
-          <p>Editer/Créer les cocktails</p>
-        </div>
-      </Link>
-      <Link to="/admin/archives" className="link-categories">
-        <div className="logo-basket1-cercle">
-          <p>Voir les produits Archivés</p>
+        <div className="admin-category">
+          <p className="admin-title">Editer/Créer les cocktails</p>
         </div>
       </Link>
     </main>

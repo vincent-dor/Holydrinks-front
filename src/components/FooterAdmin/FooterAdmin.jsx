@@ -11,33 +11,19 @@ const FooterAdmin = () => (
           Admin
         </button>
       </Link>
-      <Link to="/">
+      <Link to="/disconnect">
         <button type="button" className="button-footer-admin">
           Déconnexion
         </button>
       </Link>
     </div>
     <footer className="footer-admin">
-      <div>
-        <Link to="/">
-          <button type="button" className="button-footer-admin">
-            Home
-          </button>
-        </Link>
-      </div>
       <div className="logo-holydrinks-cercle">
         <img
           src={logoHolyDrinks}
           className="logo-holydrinks-footer-admin"
           alt="Holydrinks logo for cocktails lovers"
         />
-      </div>
-      <div>
-        <Link to="/categories">
-          <button type="button" className="button-footer-admin">
-            Catégories
-          </button>
-        </Link>
       </div>
     </footer>
   </>

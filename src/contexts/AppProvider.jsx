@@ -1,10 +1,4 @@
-import {
-  createContext,
-  useContext,
-  useState,
-  useEffect,
-  useMemo,
-} from 'react';
+import { createContext, useContext, useState, useEffect, useMemo } from 'react';
 
 const AppContext = createContext(null);
 
@@ -12,7 +6,7 @@ const AppProvider = ({ children }) => {
   const [user, setUser] = useState(
     localStorage.getItem('user')
       ? JSON.parse(localStorage.getItem('user'))
-      : null,
+      : null
   );
 
   useEffect(() => {
@@ -23,15 +17,16 @@ const AppProvider = ({ children }) => {
     }
   }, [user]);
 
-  const AppStates = useMemo(() => ({
-    user,
-    setUser,
-  }), [user]);
+  const AppStates = useMemo(
+    () => ({
+      user,
+      setUser,
+    }),
+    [user]
+  );
 
   return (
-    <AppContext.Provider value={AppStates}>
-      { children }
-    </AppContext.Provider>
+    <AppContext.Provider value={AppStates}>{children}</AppContext.Provider>
   );
 };
 

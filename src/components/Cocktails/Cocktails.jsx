@@ -10,11 +10,12 @@ import './Cocktails.css';
 
 const Cocktails = () => {
   const [cocktails, setCocktails] = useState([]);
-  const { id: categoryId} = useParams();
+  const { id: categoryId } = useParams();
 
   const fetchCocktailsByCategory = async () => {
     const { data } = await axios.get(
-      `${process.env.REACT_APP_API_URL}/categories/${categoryId}/cocktails`);
+      `${process.env.REACT_APP_API_URL}/categories/${categoryId}/cocktails`
+    );
     setCocktails(data);
   };
 
@@ -31,7 +32,7 @@ const Cocktails = () => {
             <Cocktail cocktail={cocktail} key={i} />
           ))}
           {cocktails.length === 0 && (
-            <p className="cocktails-empty">Aucun cocktail disponible</p>
+            <h2 className="cocktails-empty">Aucun cocktail disponible.</h2>
           )}
         </div>
       </main>
