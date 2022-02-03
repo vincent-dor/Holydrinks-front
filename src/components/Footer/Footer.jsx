@@ -6,7 +6,7 @@ import './Footer.css';
 const Footer = () => (
   <>
     <div>
-      <Link to="login">
+      <Link to="/login">
         <button type="button" className="button-footer">
           Connection Admin
         </button>
@@ -28,7 +28,7 @@ const Footer = () => (
         />
       </div>
       <div>
-        <Link to="categories">
+        <Link to="/categories">
           <button type="button" className="button-footer">
             Catégories
           </button>

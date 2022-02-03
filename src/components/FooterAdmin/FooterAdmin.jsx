@@ -6,9 +6,9 @@ import './FooterAdmin.css';
 const FooterAdmin = () => (
   <>
     <div className="button-footer-admin-choice">
-      <Link to="login">
+      <Link to="/admin">
         <button type="button" className="button-footer-admin">
-          Connection Admin
+          Admin
         </button>
       </Link>
       <Link to="/">
@@ -33,7 +33,7 @@ const FooterAdmin = () => (
         />
       </div>
       <div>
-        <Link to="categories">
+        <Link to="/categories">
           <button type="button" className="button-footer-admin">
             Catégories
           </button>
