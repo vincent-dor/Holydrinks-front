@@ -45,7 +45,7 @@ const AdminCocktails = () => {
             </div>
             <Link to={`/admin/cocktails/${cocktail.id}`}>
               <button type="button" className="button-cocktail-create">
-                Mettre les ingrédients
+                Editer {cocktail.name}
               </button>
             </Link>
           </section>
